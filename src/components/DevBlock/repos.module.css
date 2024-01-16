@@ -1,0 +1,59 @@
+body[data-theme="light"] {
+  --stat-bg: var(--gray-50);
+  --stat-color: var(--gray-300);
+}
+
+body[data-theme="dark"] {
+  --stat-bg: var(--gray-500);
+  --stat-color: var(--white);
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.infoTitle {
+  grid-column: span 4;
+  color: var(--stat-color);
+}
+
+.repoList {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.repoItem {
+  border: 1px solid var(--stat-bg);
+  padding: 10px;
+  text-align: center;
+  color: var(--stat-color);
+}
+
+.repoItem:hover {
+  filter: drop-shadow(1px 1px 5px var(--stat-color));
+  transition: all 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+  .info {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* 1 столбец на мобильных устройствах */
+  }
+
+  .repoList {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* 1 столбец на мобильных устройствах */
+  }
+
+  .repoItem {
+    grid-column: span 1; /* Занимает все 4 столбца на мобильных устройствах */
+  }
+}

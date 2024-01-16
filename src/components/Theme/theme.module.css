@@ -1,0 +1,23 @@
+.switcher {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  color: #5585ec;
+}
+.switcher span {
+  color: #5585ec;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+.switcher span:hover {
+  color: #60abff;
+  transition: all 0.2s;
+}
+
+.switcher:hover {
+  color: #60abff;
+  transition: all 0.2s;
+}
