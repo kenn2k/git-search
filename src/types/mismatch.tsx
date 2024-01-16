@@ -14,4 +14,6 @@ export const mismatchLocalUser = (user: Request): LocalGithubUser => ({
   twitter: user.twitter_username,
   created: user.created_at,
   repos_url: user.repos_url,
+  private: user.private,
+  owner: user.owner,
 });
