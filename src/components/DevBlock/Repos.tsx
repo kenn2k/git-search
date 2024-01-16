@@ -1,6 +1,6 @@
 // Repos.tsx
 import { useState, useEffect } from "react";
-import styles from "./Repos.module.css";
+import styles from "./repos.module.css";
 import { LocalGithubUser } from "../../types/users";
 
 interface Repo extends LocalGithubUser {
